@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>문서 제목</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      nav ul li a {
+        color: blue;
+      }
+      section h1, section p {
+        text-align: left;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        var menu1 = document.querySelector("#menu1");
+        var menu2 = document.querySelector("#menu2");
+        var menu3 = document.querySelector("#menu3");
+        
+        menu1.addEventListener("click", function() {
+          var content = document.querySelector("#content1");
+          content.style.display = "block";
+        });
+        
+        menu2.addEventListener("click", function() {
+          var content = document.querySelector("#content2");
+          content.style.display = "block";
+        });
+        
+        menu3.addEventListener("click", function() {
+          var content = document.querySelector("#content3");
+          content.style.display = "block";
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>HMKD Restaurant</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="menu1">메뉴 1</a></li>
+          <li><a href="#" id="menu2">메뉴 2</a></li>
+          <li><a href="#" id="menu3">메뉴 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="content1" style="display:none;">
+        <h1>메뉴 1 내용</h1>
+        <p>메뉴 1 내용이 들어갑니다.</p>
+      </section>
+      <section id="content2" style="display:none;">
+        <h1>메뉴 2 내용</h1>
+        <p>메뉴 2 내용이 들어갑니다.</p>
+      </section>
+      <section id="content3" style="display:none;">
+        <h1>메뉴 3 내용</h1>
+        <p>메뉴 3 내용이 들어갑니다.</p>
+      </section>
+    </main>
+    <footer>
+      <p>저작권 ©️ 2023 예시 회사. 모든 권리 보유.</p>
+    </footer>
+  </body>
+</html>
